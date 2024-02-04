@@ -116,3 +116,19 @@ ul li span {
 ul li span:hover {
     background: #ccf2ff;
 }
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    /* Styles for portrait orientation on small screens (typical for mobile devices) */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    /* Styles for landscape orientation on small screens (typical for mobile devices) */
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
