@@ -117,18 +117,26 @@ ul li span:hover {
     background: #ccf2ff;
 }
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-    /* Styles for portrait orientation on small screens (typical for mobile devices) */
-    .container {
+/* Media queries for Android views */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    .row {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        margin-bottom: 10px;
+    }
+
+    input {
+        margin-bottom: 10px;
     }
 }
 
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-    /* Styles for landscape orientation on small screens (typical for mobile devices) */
-    .container {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    .row {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    input {
+        margin-bottom: 0;
     }
 }
