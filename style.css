@@ -10,7 +10,7 @@
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #00d4ff, #00ff72);
+    background-color: orange;
     padding: 10px;
 }
 
